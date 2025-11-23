@@ -1,7 +1,7 @@
 // ============================================
 // CONFIGURAÇÃO - ALTERE APENAS ESTE NÚMERO
 // ============================================
-const WHATSAPP_NUMBER = '5527999064068';
+const WHATSAPP_NUMBER = '552731911052';
 
 // ============================================
 // CHATBOT - COLETA DE INFORMAÇÕES BÁSICAS
