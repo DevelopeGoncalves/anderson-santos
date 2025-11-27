@@ -25,7 +25,7 @@ const services = {
         ]
     },
     '2': {
-        name: '🔄 Transferência Veicular',
+        name: '📄 Transferência Veicular',
         questions: [
             { key: 'placa', question: 'Qual a <strong>placa do veículo</strong>?', placeholder: 'Ex: ABC-1234' },
             { key: 'chassi', question: 'Qual o número do <strong>chassi</strong>?', placeholder: 'Digite o chassi completo' },
@@ -157,13 +157,25 @@ function showServiceCatalog() {
     
     const chatMessages = document.getElementById('chatMessages');
     const catalogDiv = document.createElement('div');
-    catalogDiv.className = 'chat-message my-4';
+    catalogDiv.className = 'chat-message';
     
-    let catalogHTML = '<div class="grid grid-cols-1 gap-2">';
+    let catalogHTML = '<div style="display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 10px;">';
     
     for (let key in services) {
         catalogHTML += `
-            <button onclick="selectService('${key}')" class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-4 py-3 rounded-xl transition duration-300 text-left font-semibold shadow-lg transform hover:scale-105">
+            <button onclick="selectService('${key}')" style="
+                background: linear-gradient(135deg, #3533cd, #4845e4);
+                color: white;
+                border: none;
+                padding: 14px 18px;
+                border-radius: 12px;
+                font-weight: 600;
+                font-size: 15px;
+                cursor: pointer;
+                text-align: left;
+                transition: all 0.3s ease;
+                font-family: Inter, sans-serif;
+            " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(53,51,205,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
                 ${services[key].name}
             </button>
         `;
@@ -197,9 +209,9 @@ function selectService(serviceId) {
 function addBotMessage(message) {
     const chatMessages = document.getElementById('chatMessages');
     const messageDiv = document.createElement('div');
-    messageDiv.className = 'chat-message flex justify-start';
+    messageDiv.className = 'chat-message';
     messageDiv.innerHTML = `
-        <div class="chat-bot-message text-gray-800 rounded-2xl rounded-tl-sm p-4 max-w-[80%] shadow-md">
+        <div class="chat-bot-message">
             ${message}
         </div>
     `;
@@ -211,9 +223,9 @@ function addBotMessage(message) {
 function addUserMessage(message) {
     const chatMessages = document.getElementById('chatMessages');
     const messageDiv = document.createElement('div');
-    messageDiv.className = 'chat-message flex justify-end';
+    messageDiv.className = 'chat-message';
     messageDiv.innerHTML = `
-        <div class="chat-user-message text-white rounded-2xl rounded-tr-sm p-4 max-w-[80%] shadow-md">
+        <div class="chat-user-message">
             ${message}
         </div>
     `;
@@ -277,10 +289,26 @@ function finishChat() {
     
     // Botão final
     const finalButtonDiv = document.createElement('div');
-    finalButtonDiv.className = 'chat-message my-4 flex justify-center';
+    finalButtonDiv.className = 'chat-message';
+    finalButtonDiv.style.display = 'flex';
+    finalButtonDiv.style.justifyContent = 'center';
+    finalButtonDiv.style.marginTop = '20px';
     finalButtonDiv.innerHTML = `
-        <a href="${whatsappLink}" target="_blank" class="btn-primary text-white px-6 py-3 rounded-full font-bold shadow-lg flex items-center justify-center transition duration-300 transform hover:scale-105">
-            <i class="fab fa-whatsapp mr-2"></i> Enviar Mensagem para Anderson
+        <a href="${whatsappLink}" target="_blank" style="
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #3533cd, #4845e4);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            font-family: Inter, sans-serif;
+        " onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 30px rgba(53,51,205,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+            <i class="fab fa-whatsapp" style="font-size: 20px;"></i> Enviar Mensagem para Anderson
         </a>
     `;
     chatMessages.appendChild(finalButtonDiv);
@@ -289,7 +317,6 @@ function finishChat() {
     
     disableInput(true);
 }
-
 
 // Funções utilitárias
 function scrollToBottom() {
@@ -321,7 +348,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Enviar mensagem ao apertar Enter
     document.getElementById('userInput').addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') {
+        if (e.key === 'Enter' && !this.disabled) {
             sendMessage();
         }
     });
@@ -329,19 +356,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Back to Top functionality
     const homeButton = document.getElementById('homeButton');
 
-    window.onscroll = function() { scrollFunction() };
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            homeButton.style.display = "flex";
-            homeButton.style.opacity = "1";
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            homeButton.style.display = 'flex';
+            homeButton.classList.add('show');
         } else {
-            homeButton.style.opacity = "0";
+            homeButton.classList.remove('show');
             setTimeout(() => {
-                if (document.body.scrollTop <= 300 && document.documentElement.scrollTop <= 300) {
-                    homeButton.style.display = "none";
+                if (window.pageYOffset <= 300) {
+                    homeButton.style.display = 'none';
                 }
-            }, 300); // Delay para coincidir com a transição CSS
+            }, 300);
         }
-    }
+    });
 });
