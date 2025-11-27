@@ -4,302 +4,285 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anderson Santos - Despachante Documentalista | Gestão de Trânsito e Financeira</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-50">
-    <header class="bg-white shadow-md sticky top-0 z-50 border-b border-gray-100">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <div>
-                    <h1 class="text-2xl md:text-3xl font-bold gradient-text">Anderson Santos</h1>
-                    <p class="text-gray-600 text-sm md:text-base font-medium">Despachante Documentalista | Gestão de Trânsito e Financeira</p>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">AS</div>
+                    <div class="logo-text">
+                        <h1>Anderson Santos</h1>
+                        <p>Despachante Documentalista</p>
+                    </div>
                 </div>
-                <nav class="flex items-center space-x-6">
-                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition duration-300 hidden md:block font-semibold">Home</a>
-                    <a href="#sobre" class="text-gray-700 hover:text-blue-600 transition duration-300 hidden md:block font-semibold">Sobre</a>
-                    <a href="#servicos" class="text-gray-700 hover:text-blue-600 transition duration-300 hidden md:block font-semibold">Serviços</a>
-                    <a href="#chatbot" class="btn-primary text-white px-6 py-2.5 rounded-full font-bold shadow-lg">
-                        Atendimento
+                <nav>
+                    <a href="#home">Home</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#chatbot" class="btn-atendimento">
+                        <i class="fas fa-robot"></i> Atendimento
                     </a>
                 </nav>
             </div>
         </div>
     </header>
 
-    <section id="home" class="relative py-24 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 text-white overflow-hidden">
-        <div class="absolute inset-0 bg-black opacity-10"></div>
-        <div class="container mx-auto px-6 text-center relative z-10">
-            <h2 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">Soluções Completas em<br/>Documentação e Finanças</h2>
-            <p class="text-xl md:text-2xl text-blue-100 mb-4 max-w-3xl mx-auto font-light">
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h2 class="hero-title">Soluções Completas em<br/>Documentação e Finanças</h2>
+            <p class="hero-subtitle">
                 Despachante Documentalista | Gestão de Trânsito | Consultoria Financeira
             </p>
-            <p class="text-lg md:text-xl text-blue-200 mb-10 max-w-2xl mx-auto">
+            <p class="hero-description">
                 Sua vida mais fácil e seus documentos sempre em dia.
             </p>
-            <div class="flex flex-wrap justify-center gap-4 mt-8">
-                <a href="#servicos" class="bg-white text-blue-700 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition duration-300 shadow-xl">
-                    <i class="fas fa-tools mr-2"></i> Nossos Serviços
+            <div class="hero-buttons">
+                <a href="#servicos" class="btn-primary">
+                    <i class="fas fa-tools"></i> Nossos Serviços
                 </a>
-                <a href="#chatbot" class="border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-blue-700 transition duration-300">
-                    <i class="fas fa-robot mr-2"></i> Iniciar Atendimento
+                <a href="#chatbot" class="btn-secondary">
+                    <i class="fas fa-robot"></i> Iniciar Atendimento
                 </a>
             </div>
         </div>
     </section>
     
-    <section id="sobre" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-6">Sobre Mim</h2>
-            <p class="text-center text-gray-600 mb-16 text-lg max-w-2xl mx-auto">Profissional multidisciplinar com formação em Finanças e anos de experiência</p>
+    <section id="sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <p class="section-subtitle">Profissional multidisciplinar com formação em Finanças e anos de experiência</p>
             
-            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="relative">
-                    <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-3xl transform rotate-3"></div>
-                    <div class="relative">
-                <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-3xl transform rotate-3"></div>
-                <div
-                    class="relative bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl overflow-hidden h-96 border-4 border-white shadow-2xl">
-                    <img src="img/anderson-santos-perfil.jpg" alt="Foto de Perfil de Anderson Santos, Despachante"
-                        class="w-full h-full object-cover">
-                </div>
-                </div>
+            <div class="sobre-grid">
+                <div class="sobre-image">
+                    <div class="image-wrapper">
+                        <img src="img/anderson-santos-perfil.jpg" alt="Anderson Santos - Despachante">
+                    </div>
                 </div>
 
-                <div>
-                    <h3 class="text-3xl font-bold text-gray-900 mb-6">Anderson Santos</h3>
-                    <div class="space-y-4 mb-8">
-                        <div class="flex items-start">
-                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                                <i class="fas fa-id-badge text-blue-600 text-xl"></i>
+                <div class="sobre-content">
+                    <h3>Anderson Santos</h3>
+                    
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon blue">
+                                <i class="fas fa-id-badge"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-gray-800">Despachante Documentalista</h4>
-                                <p class="text-gray-600 text-sm">Especialista em documentação veicular</p>
+                                <h4>Despachante Documentalista</h4>
+                                <p>Especialista em documentação veicular</p>
                             </div>
                         </div>
-                        <div class="flex items-start">
-                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                                <i class="fas fa-road text-green-600 text-xl"></i>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon green">
+                                <i class="fas fa-road"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-gray-800">Gestão de Trânsito</h4>
-                                <p class="text-gray-600 text-sm">Recursos contra multas e processos</p>
+                                <h4>Gestão de Trânsito</h4>
+                                <p>Recursos contra multas e processos</p>
                             </div>
                         </div>
-                        <div class="flex items-start">
-                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                                <i class="fas fa-chart-line text-purple-600 text-xl"></i>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon purple">
+                                <i class="fas fa-chart-line"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-gray-800">Consultoria Financeira</h4>
-                                <p class="text-gray-600 text-sm">Análise de juros e financiamentos</p>
+                                <h4>Consultoria Financeira</h4>
+                                <p>Análise de juros e financiamentos</p>
                             </div>
                         </div>
                     </div>
                     
-                    <p class="text-gray-700 leading-relaxed mb-6">
-                        Com sólida formação em Finanças e anos de dedicação, ofereço consultoria completa que vai além da simples papelada. Meu foco é **agilidade, transparência e segurança**.
+                    <p class="sobre-description">
+                        Com sólida formação em Finanças e anos de dedicação, ofereço consultoria completa que vai além da simples papelada. Meu foco é <strong>agilidade, transparência e segurança</strong>.
                     </p>
                     
-                    <a href="#chatbot" class="btn-primary text-white px-8 py-4 rounded-full font-bold inline-block shadow-lg">
-                        <i class="fas fa-comment-dots mr-2"></i> Iniciar Atendimento
+                    <a href="#chatbot" class="btn-primary">
+                        <i class="fas fa-comment-dots"></i> Iniciar Atendimento
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="servicos" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-6">Nossos Serviços</h2>
-            <p class="text-center text-gray-600 mb-16 text-lg max-w-2xl mx-auto">Documentação, Veículos e Soluções Financeiras em um só lugar</p>
+    <section id="servicos">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <p class="section-subtitle">Documentação, Veículos e Soluções Financeiras em um só lugar</p>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-                <div class="service-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
-                    <div class="h-40 relative">
-                        <img src="img/zero-multa-transito.jpg" alt="Recursos contra multas" class="card-img">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/zero-multa-transito.jpg" alt="Recursos contra multas">
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Zero Multa Trânsito</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">Recursos contra multas e defesa em processos de suspensão/cassação da CNH.</p>
-                    </div>
-                </div>
-
-                <div class="service-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
-                    <div class="h-40 relative">
-                        <img src="img/transferencia-veicular.jpg" alt="Transferência de propriedade de veículos" class="card-img">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Transferência Veicular</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">Assessoria completa para compra e venda de veículos com toda documentação.</p>
+                    <div class="service-content">
+                        <h3>Zero Multa Trânsito</h3>
+                        <p>Recursos contra multas e defesa em processos de suspensão/cassação da CNH.</p>
                     </div>
                 </div>
 
-                <div class="service-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
-                    <div class="h-40 relative">
-                        <img src="img/regularizacao-documentos.jpg" alt="Regularização de licenciamento" class="card-img">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/transferencia-veicular.jpg" alt="Transferência veicular">
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Regularização de Documentos</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">Licenciamento, 2ª via de CRV/DUT e baixa de gravame de forma ágil.</p>
-                    </div>
-                </div>
-
-                <div class="service-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
-                    <div class="h-40 relative">
-                        <img src="img/consulta-veicular.jpg" alt="Consulta completa de histórico de veículos" class="card-img">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Consulta Veicular</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">Verificação completa de histórico, débitos e restrições do veículo.</p>
+                    <div class="service-content">
+                        <h3>Transferência Veicular</h3>
+                        <p>Assessoria completa para compra e venda de veículos com toda documentação.</p>
                     </div>
                 </div>
 
-                <div class="service-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
-                    <div class="h-40 relative">
-                        <img src="img/seguro-vida-saude.jpg" alt="Seguro de vida e saúde" class="card-img">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/regularizacao-documentos.jpg" alt="Regularização de documentos">
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Seguro de Vida e Saúde</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">Consultoria para as melhores opções de seguro e previdência.</p>
-                    </div>
-                </div>
-
-                <div class="service-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
-                    <div class="h-40 relative">
-                        <img src="img/financiamento-veicular.jpg" alt="Aprovação de financiamento de veículos" class="card-img">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Financiamento Veicular</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">Aprovação de financiamento com as melhores taxas do mercado.</p>
+                    <div class="service-content">
+                        <h3>Regularização de Documentos</h3>
+                        <p>Licenciamento, 2ª via de CRV/DUT e baixa de gravame de forma ágil.</p>
                     </div>
                 </div>
 
-                <div class="service-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
-                    <div class="h-40 relative">
-                        <img src="img/emprestimo-garantia.jpg" alt="Empréstimo usando veículo ou imóvel como garantia" class="card-img">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/consulta-veicular.jpg" alt="Consulta veicular">
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Empréstimo com Garantia</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">Crédito com juros baixos usando veículo ou imóvel como garantia.</p>
-                    </div>
-                </div>
-
-                <div class="service-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
-                    <div class="h-40 relative">
-                        <img src="img/revisao-juros.jpg" alt="Análise de contratos para juros abusivos" class="card-img">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Revisão de Juros Abusivos</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">Análise de contratos para identificar cobranças indevidas.</p>
+                    <div class="service-content">
+                        <h3>Consulta Veicular</h3>
+                        <p>Verificação completa de histórico, débitos e restrições do veículo.</p>
                     </div>
                 </div>
 
-                <div class="service-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
-                    <div class="h-40 relative">
-                        <img src="img/registro-antt.jpg" alt="Registro e renovação de ANTT" class="card-img">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/seguro-vida-saude.jpg" alt="Seguro de vida">
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Registro Nacional (ANTT)</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">Registro e renovação de ANTT para transportadores.</p>
+                    <div class="service-content">
+                        <h3>Seguro de Vida e Saúde</h3>
+                        <p>Consultoria para as melhores opções de seguro e previdência.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/financiamento-veicular.jpg" alt="Financiamento">
+                    </div>
+                    <div class="service-content">
+                        <h3>Financiamento Veicular</h3>
+                        <p>Aprovação de financiamento com as melhores taxas do mercado.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/emprestimo-garantia.jpg" alt="Empréstimo">
+                    </div>
+                    <div class="service-content">
+                        <h3>Empréstimo com Garantia</h3>
+                        <p>Crédito com juros baixos usando veículo ou imóvel como garantia.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/revisao-juros.jpg" alt="Revisão de juros">
+                    </div>
+                    <div class="service-content">
+                        <h3>Revisão de Juros Abusivos</h3>
+                        <p>Análise de contratos para identificar cobranças indevidas.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/registro-antt.jpg" alt="ANTT">
+                    </div>
+                    <div class="service-content">
+                        <h3>Registro Nacional (ANTT)</h3>
+                        <p>Registro e renovação de ANTT para transportadores.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="chatbot" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-6">Atendimento Virtual</h2>
-            <p class="text-center text-gray-600 mb-12 text-lg max-w-2xl mx-auto">Responda algumas perguntas e seu atendimento será encaminhado para o WhatsApp</p>
+    <section id="chatbot">
+        <div class="container">
+            <h2 class="section-title">Atendimento Virtual</h2>
+            <p class="section-subtitle">Responda algumas perguntas e seu atendimento será encaminhado para o WhatsApp</p>
             
-            <div class="max-w-2xl mx-auto bg-white rounded-3xl shadow-2xl border border-gray-200 overflow-hidden">
-                <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-6 border-b border-blue-800">
-                    <div class="flex items-center">
-                        <div class="w-14 h-14 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                            <i class="fas fa-robot text-white text-2xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-xl">Assistente Virtual</h3>
-                            <p class="text-blue-100 text-sm flex items-center">
-                                <span class="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
-                                Online agora
-                            </p>
-                        </div>
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="chat-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="chat-info">
+                        <h3>Assistente Virtual</h3>
+                        <p><span class="status-dot"></span> Online agora</p>
                     </div>
                 </div>
 
-                <div id="chatMessages" class="h-96 overflow-y-auto p-6 space-y-4 bg-gray-50"></div>
+                <div id="chatMessages" class="chat-messages"></div>
 
-                <div id="chatInput" class="p-6 bg-white border-t border-gray-200">
-                    <div class="flex gap-3">
-                        <input 
-                            type="text" 
-                            id="userInput" 
-                            placeholder="Digite sua resposta aqui..." 
-                            class="flex-1 px-5 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                        >
-                        <button 
-                            onclick="sendMessage()" 
-                            id="sendButton"
-                            class="bg-blue-600 text-white w-12 h-12 rounded-full hover:bg-blue-700 transition duration-300 flex items-center justify-center shadow-lg"
-                        >
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </div>
+                <div id="chatInput" class="chat-input">
+                    <input 
+                        type="text" 
+                        id="userInput" 
+                        placeholder="Digite sua resposta aqui..." 
+                    >
+                    <button onclick="sendMessage()" id="sendButton">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contato" class="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 py-20">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl md:text-5xl font-bold text-center text-white mb-6">Entre em Contato</h2>
-            <p class="text-center text-blue-100 mb-12 text-lg max-w-2xl mx-auto">Fale diretamente comigo através dos canais abaixo</p>
+    <section id="contato" class="contato-section">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <p class="section-subtitle">Fale diretamente comigo através dos canais abaixo</p>
             
-            <div class="max-w-3xl mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <a href="https://wa.me/552731911052" target="_blank" class="bg-white rounded-3xl p-10 text-center hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group">
-                        <div class="bg-green-500 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition duration-300 shadow-xl">
-                            <i class="fab fa-whatsapp text-white text-4xl"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">WhatsApp</h3>
-                        <p class="text-gray-600 mb-4">Atendimento rápido e direto</p>
-                        <span class="text-green-600 font-bold text-lg">(27) 99906-4068</span>
-                    </a>
+            <div class="contato-grid">
+                <a href="https://wa.me/552731911052" target="_blank" class="contato-card whatsapp">
+                    <div class="contato-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Atendimento rápido e direto</p>
+                    <span class="contato-info">(27) 99906-4068</span>
+                </a>
 
-                    <a href="https://instagram.com/santtos.despachant" target="_blank" class="bg-white rounded-3xl p-10 text-center hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group">
-                        <div class="bg-gradient-to-br from-purple-500 to-pink-500 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition duration-300 shadow-xl">
-                            <i class="fab fa-instagram text-white text-4xl"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Instagram</h3>
-                        <p class="text-gray-600 mb-4">Acompanhe dicas e novidades</p>
-                        <span class="text-purple-600 font-bold text-lg">@santtos.despachant</span>
-                    </a>
-                </div>
+                <a href="https://instagram.com/santtos.despachant" target="_blank" class="contato-card instagram">
+                    <div class="contato-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>Acompanhe dicas e novidades</p>
+                    <span class="contato-info">@santtos.despachant</span>
+                </a>
             </div>
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-white py-10">
-        <div class="container mx-auto px-6 text-center">
-            <h3 class="text-2xl font-bold mb-3">Anderson Santos</h3>
-            <p class="text-gray-400 mb-2">Despachante Documentalista e Consultor Financeiro</p>
-            <p class="text-gray-400 mb-6">Gestão de Trânsito | Documentação Veicular | Soluções Financeiras</p>
-            <div class="border-t border-gray-700 pt-6">
-                <p class="text-gray-500 text-sm">&copy; 2024 Anderson Santos. Todos os direitos reservados.</p>
-            </div>
+    <footer>
+        <div class="container">
+            <h3>Anderson Santos</h3>
+            <p>Despachante Documentalista e Consultor Financeiro</p>
+            <p class="footer-services">Gestão de Trânsito | Documentação Veicular | Soluções Financeiras</p>
+            <div class="footer-divider"></div>
+            <p class="footer-copy">&copy; 2024 Anderson Santos. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <a href="https://wa.me/552731911052" target="_blank" class="floating-whatsapp bg-green-500 w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition duration-300">
-        <i class="fab fa-whatsapp text-white text-3xl"></i>
+    <a href="https://wa.me/552731911052" target="_blank" class="floating-whatsapp">
+        <i class="fab fa-whatsapp"></i>
     </a>
 
-    <a href="#home" id="homeButton" class="fixed bottom-24 right-8 bg-blue-600 text-white w-12 h-12 rounded-full shadow-xl hover:bg-blue-700 transition duration-300 z-40 opacity-0 flex items-center justify-center" style="display: none;">
+    <a href="#home" id="homeButton" class="floating-home">
         <i class="fas fa-arrow-up"></i>
     </a>
 
